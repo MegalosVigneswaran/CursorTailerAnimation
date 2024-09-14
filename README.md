@@ -2,18 +2,6 @@
 
 A JavaScript library that adds a stylish trailing effect to the cursor on your webpage. The animation creates a dynamic and visually appealing cursor trail using a series of colored circles.
 
-## Options
-
-- **`numCircles`** (Number): Number of circles in the trail.
-- **`colors`** (Array of Strings): Array of color codes to create a gradient effect. If only one color is provided, all circles will be that color.
-- **`fadingTime`** (Number): Time in milliseconds for the circles to fade out after the cursor stops moving.
-- **`movementFactor`** (Number): Determines how much the circles move towards the cursor. A higher value makes the circles follow the cursor more closely.
-- **`cursorOffset`** (Object): Offset from the cursor position in pixels. Example: `{ x: 20, y: 20 }`.
-- **`circleHeight`** (String): Height of the circles. Example: `'20px'`.
-- **`circleWidth`** (String): Width of the circles. Example: `'20px'`.
-- **`circleBorderRadius`** (String): Border radius of the circles. Example: `'50%'` for round circles.
-- **`speedThreshold`** (Number): Minimum cursor speed required for the circles to appear. Adjust this to control when the animation starts.
-
 ## Installation
 
 Include the library in your HTML file by adding the following script tag:
@@ -48,9 +36,21 @@ To initialize the `CursorTailerAnimation` with default parameters, use the follo
 
 ### Custom Initialization
 
-You can customize the parameters by passing an options object to the `CursorTailerAnimation` constructor. Here are a few examples:
+You can customize the parameters by passing an options object to the `CursorTailerAnimation` constructor. 
 
-#### Example 2: Single Color
+## parameters
+
+- **`numCircles`** (Number): Number of circles in the trail.
+- **`colors`** (Array of Strings): Array of color codes to create a gradient effect. If only one color is provided, all circles will be that color.
+- **`fadingTime`** (Number): Time in milliseconds for the circles to fade out after the cursor stops moving.
+- **`movementFactor`** (Number): Determines how much the circles move towards the cursor. A higher value makes the circles follow the cursor more closely.
+- **`cursorOffset`** (Object): Offset from the cursor position in pixels. Example: `{ x: 20, y: 20 }`.
+- **`circleHeight`** (String): Height of the circles. Example: `'20px'`.
+- **`circleWidth`** (String): Width of the circles. Example: `'20px'`.
+- **`circleBorderRadius`** (String): Border radius of the circles. Example: `'50%'` for round circles.
+- **`speedThreshold`** (Number): Minimum cursor speed required for the circles to appear. Adjust this to control when the animation starts.
+
+#### Example 1: Single Color
 
 To create a trail with a single color (black), use the following code:
 
@@ -72,8 +72,8 @@ To create a trail with a single color (black), use the following code:
       fadingTime: 200, // Time (in ms) for the circles to fade out
       movementFactor: 0.15, // Movement factor for trailing effect
       cursorOffset: { x: 15, y: 15 }, // Offset from the cursor position
-      circleHeight: '30px', // Height of the circles
-      circleWidth: '30px', // Width of the circles
+      circleHeight: '20px', // Height of the circles
+      circleWidth: '20px', // Width of the circles
       circleBorderRadius: '50%', // Border radius of the circles
       speedThreshold: 0.05 // Cursor speed threshold for animating circles
     });
@@ -104,8 +104,8 @@ To create a trail with a gradient effect between two colors, use the following c
       fadingTime: 250, // Time (in ms) for the circles to fade out
       movementFactor: 0.2, // Movement factor for trailing effect
       cursorOffset: { x: 20, y: 20 }, // Offset from the cursor position
-      circleHeight: '25px', // Height of the circles
-      circleWidth: '25px', // Width of the circles
+      circleHeight: '20px', // Height of the circles
+      circleWidth: '20px', // Width of the circles
       circleBorderRadius: '50%', // Border radius of the circles
       speedThreshold: 0.1 // Cursor speed threshold for animating circles
     });
@@ -168,6 +168,11 @@ The `CursorTailerAnimation` library offers flexibility in customizing the cursor
 The library is compatible with modern web browsers. Ensure that your HTML document includes the necessary `meta` tags for responsive design and that the library script is correctly linked.
 
 Feel free to contribute to the library or raise issues on the [GitHub repository](https://github.com/MegalosVigneswaran/CursorTailerAnimation). Happy coding!
+
+---
+
+**Acknowledgment:**
+This project is inspired by the tutorial created by [this YouTube creator](https://www.youtube.com/watch?v=7eE8xPyXSR4&t=2s). Thank you for the idea and inspiration!
 
 ---
 
